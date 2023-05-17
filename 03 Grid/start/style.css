@@ -1,0 +1,131 @@
+:root{
+    --background-green: rgb(153, 238, 210);
+    --background-white: rgb(245, 249, 224) ;
+    --px-10: 10px;
+    --pdd-30: 30px 0;
+}
+
+
+section{
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+
+section.calc{
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr ;
+    grid-template-areas:
+    "tot tot tot tot"
+    "pls mns multp dvs"
+    "nov ott stt eql"
+    "sei cnq qtr eql"
+    "tre due uno eql"
+    "zro pnt ccc eql";
+    margin: 20px 40px;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: rgb(65, 63, 63);
+    border-radius: var(--px-10);
+}
+
+.tot{
+    display: grid;
+    justify-self: end;
+    grid-area: tot;
+    background-color: rgb(77, 74, 74);
+    border-top-left-radius: var(--px-10);
+    border-top-right-radius: var(--px-10);
+    color: aliceblue;
+    padding: var(--px-10);
+    font-size: 28px;
+}
+.pls{
+    grid-area: pls;
+    background-color: var(--background-green);
+    padding: var(--pdd-30);
+}
+.mns{
+    grid-area: mns;
+    background-color: var(--background-green);
+    padding: var(--pdd-30);
+}
+.multp{
+    grid-area: multp;
+    background-color: var(--background-green);
+    padding: var(--pdd-30);
+}
+.dvs{
+    grid-area: dvs;
+    background-color: var(--background-green);
+    padding: var(--pdd-30);
+}
+.nov{
+    grid-area: nov;
+    padding: var(--pdd-30);
+}
+.ott{
+    grid-area: ott;
+    padding: var(--pdd-30);
+}
+.stt{
+    grid-area: stt;
+    padding: var(--pdd-30);
+}
+.sei{
+    grid-area: sei;
+    padding: var(--pdd-30);
+}
+.cnq{
+    grid-area: cnq;
+    padding: var(--pdd-30);
+}
+.qtr{
+    grid-area: qtr;
+    padding: var(--pdd-30);
+}
+.tre{
+    grid-area: tre;
+    padding: var(--pdd-30);
+}
+.due{
+    grid-area: due;
+    padding: var(--pdd-30);
+}
+.uno{
+    grid-area: uno;
+    padding: var(--pdd-30);
+}
+.zro{
+    grid-area: zro;
+    border-bottom-left-radius: var(--px-10);
+    padding: var(--pdd-30);
+}
+.pnt{
+    grid-area: pnt;
+    padding: var(--pdd-30);
+}
+.ccc{
+    grid-area: ccc;
+    padding: var(--pdd-30);
+}
+.eql{
+    display: grid;
+    grid-area: eql;
+    background-color: rgb(207, 40, 65);
+    border-bottom-right-radius: var(--px-10);
+    padding: var(--pdd-30); 
+    align-items: center;
+}
+
+.bg-white{
+    background-color: var(--background-white);
+}
+
+
+
+div{
+    text-align: center;
+}
