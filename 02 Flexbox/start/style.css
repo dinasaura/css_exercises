@@ -1,0 +1,60 @@
+body {
+    font-size: 18px;
+}
+
+.sidebar{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ margin: 30px 15px;
+}
+.sidebar-serch{
+    width: 200px;
+    height: 50vh;
+}
+
+ label{
+    display:block;
+    font-weight:bold;
+}
+
+ ::placeholder {
+  color: red;
+}
+
+.align-sidebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.home-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.home-links a{
+    text-decoration: none; 
+    font-size: 20px;
+    color: #2b2b2b;
+    padding: 0 20px ;
+}
+
+.home-links a:hover{
+    color: #2b2bb2;
+    transition: 0.3s;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+    gap: 15px;
+}
+
+.user-image{
+    width: 150px;
+    height: 150px;
+}
