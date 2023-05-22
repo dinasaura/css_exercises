@@ -5,7 +5,7 @@
 
 :root {
     font-family: "Helvetica", "Arial", sans-serif;
-    --black-color: #132117;
+    --black-color: #1b1b30;
     --white-color: white;
     --green-color: #0c6313;
     --p-x: 100px;
@@ -24,22 +24,39 @@
 
   .home-nav{
     display: flex;
+    flex-direction: row;
     gap: 20px;
   }
 
-  .home-nav a{
-    text-decoration: none;
+  .home-nav ul{
+     display:flex;
+     flex-direction: row;
+     gap: 20px;
   }
 
-  .select-nav{
-    display: flex;
+  .home-nav li{
+   display: block;
+  }
+
+  .home-nav li > a{
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+  }
+
+
+  .dropdown{
     font-size: 16px;
     background-color: var(--black-color);
     border-color: transparent;
-    color: var(--white-color);
+    color: rgb(196, 192, 192);
+  }
+
+  .color{
+    color: rgb(196, 192, 192);
   }
   
-  .select-nav select{
+  .select-nav ul > li{
     display: none;
   }
 
@@ -59,9 +76,13 @@
   }
 
   #link-disabled{
-    color: rgba(255, 250, 250, 0.653);
+    color: rgba(104, 104, 104, 0.653);
     font-size: 16px;
   }
+  
+  a#link-disabled {
+    align-self: center;
+}
 
   .btn-nav{
     background-color: var(--black-color);
