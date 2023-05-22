@@ -1,42 +1,36 @@
+h3{
+    margin: 10px 15px;
+}
+
+p{
+    margin: 5px 15px;
+}
+
+a{
+    margin: 0 15px;
+}
+
+.all-card{
+    width: 16.5em;
+    margin: 20px 10px;
+}
+
+
 .card {
-    display: grid;
-  grid-template-columns: 20%;
-  grid-template-rows: 1fr 1fr 10% 10% 10% 10%;
+    border: solid 1px  rgb(148, 144, 144);
   
+}
+.card div{
+    border-top: solid 1px  rgb(148, 144, 144);
+    margin: 10px 0;
 }
 
 .card_img{
-    width: 100%;
-    height: 100%;
+    height: 170px;
+    margin-bottom: -7px;
 }
 
-.card_title {
-    padding-left: 10px;
-    border-style: solid;
-}
-
-.item1 {
-    padding: 10px 0 0 10px;
-    border-style: solid;
-
-}
-
-.item2 {
-    padding: 10px 0 0 10px;
-    border-style: solid;
-}
-
-.item3 {
-    padding: 10px 0 0 10px;
-    border-style: solid;
-}
-
-.card_link {
-    padding-top: 10px;
-    border-style: solid;
-}
-
-.card_link a {
-    padding-left: 10px;
-    padding-right: 10px;
+.card_links {
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
