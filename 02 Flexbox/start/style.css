@@ -1,15 +1,29 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-size: 18px;
 }
 
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding: 20px 0;
+    background: rgb(200, 214, 222)
+}
+
 .sidebar{
- display: flex;
- flex-direction: column;
- justify-content: space-between;
  margin: 30px 15px;
 }
+
 .sidebar-serch{
-    width: 200px;
     height: 50vh;
 }
 
@@ -24,7 +38,6 @@ body {
 
 .align-sidebar{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -32,6 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    flex: 1;
 }
 
 .home-links a{
