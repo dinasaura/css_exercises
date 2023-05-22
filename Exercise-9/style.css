@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.cards{
+    display: flex;
+    gap: 40px;
+    align-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 15px;
+    background: linear-gradient(rgb(104, 104, 104), #cdcdcd);
+    box-shadow: 0 3px 5px #9f9f9f;
+}
+
+.user-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-items-nav{
+    display: flex;
+    margin-left: 5px;
+    gap: 10px;
+}
+
+.dateuser-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.dateuser-nav p{
+    color: rgb(184, 181, 181);
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.img-nav{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.align-margin{
+    margin-right: 10px;
+}
+
+.img-post{
+    width: 100% ;
+    height: 17em;
+}
+
+.text-post {
+    margin: 5px 20px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.icons{
+    padding: 5px 15px;
+}
+
+@media (max-width: 768px){
+    body{
+        height: 100%;
+    }
+    .cards{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    } 
+    .card{
+        display: block;
+        width: 50vh;
+        height: 70vh;
+    }
+
+
+}
+
+@media (max-width: 375px){
+    .cards{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+}
+
