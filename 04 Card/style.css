@@ -13,21 +13,18 @@ a{
 .all-card{
     width: 16.5em;
     margin: 20px 10px;
-}
-
-
-.card {
     border: solid 1px  rgb(148, 144, 144);
-  
+    border-radius: 5px;
 }
+
 .card div{
     border-top: solid 1px  rgb(148, 144, 144);
     margin: 10px 0;
 }
 
 .card_img{
-    height: 170px;
-    margin-bottom: -7px;
+    height: 100%;
+    width: 16.5em;
 }
 
 .card_links {
