@@ -11,41 +11,16 @@ body {
 
 aside {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 200px;
-    height: 100%;
+    height: 100vh;
     padding: 20px 0;
     background: rgb(200, 214, 222)
-}
-
-.sidebar{
- margin: 30px 15px;
-}
-
-.sidebar-serch{
-    height: 50vh;
-}
-
- label{
-    display:block;
-    font-weight:bold;
-}
-
- ::placeholder {
-  color: red;
-}
-
-.align-sidebar{
-    display: flex;
-    justify-content: space-around;
 }
 
 .home-links {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    flex: 1;
+    justify-content:space-between;
 }
 
 .home-links a{
@@ -64,11 +39,14 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: flex-end;
-    gap: 15px;
+    margin-bottom: 30px;
 }
 
 .user-image{
-    width: 150px;
-    height: 150px;
+    width: 55px;
+    height: 55px;
+}
+
+.sidebar__items svg{
+    margin-left: 20px;
 }
